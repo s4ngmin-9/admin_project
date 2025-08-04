@@ -1,0 +1,232 @@
+:root {
+  --bg-color: #fdfdf7;
+  --text-color: #000;
+  --primary-color: #a020f0;
+  --table-border-color: #dee2e6;
+  --button-bg: #a020f0;
+  --button-text-color: #000;
+  --input-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #a020f0;
+  --header-bg: #1c1c1c;
+  --table-border-color: #30363d;
+  --button-text-color: #f0f0f0;
+  --input-bg: #222;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--header-bg);
+}
+
+.header-left {
+  color: var(--primary-color);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#datetime-display {
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#dark-mode-toggle,
+#signup-button,
+#search-button {
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
+}
+
+#search-button {
+  background-color: var(--primary-color);
+}
+
+.category-nav {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--header-bg);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--bg-color);
+}
+
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#product-name {
+  padding: 9px 10px;
+  font-size: 16px;
+  border: 1px solid var(--table-border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  width: 250px;
+}
+
+#search-button {
+  padding: 9px 15px;
+}
+
+.gender-selector select {
+  padding: 8px 10px;
+  border: 1px solid var(--table-border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th {
+  text-align: center;
+}
+
+.data-table td {
+  border: 1px solid var(--table-border-color);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.data-table thead {
+  background-color: var(--header-bg);
+}
+
+.data-table th {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+  background-color: var(--bg-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pagination a {
+  color: var(--primary-color);
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid var(--table-border-color);
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--primary-color);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: var(--bg-color);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--modal-bg);
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.header-button {
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
+  padding: 8px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
