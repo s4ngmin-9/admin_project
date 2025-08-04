@@ -52,7 +52,7 @@ body {
 
 #datetime-display {
   font-size: 15px;
-  color: var(--secondary-color);
+  color: #6c757d;
 }
 
 button {
@@ -63,7 +63,6 @@ button {
 }
 
 #dark-mode-toggle,
-#signup-button,
 #search-button {
   background-color: var(--secondary-color);
   color: var(--button-text-color);
@@ -272,4 +271,3 @@ button {
 .banner-button:hover {
   background-color: #fdd835;
 }
-
