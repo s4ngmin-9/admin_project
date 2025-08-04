@@ -246,7 +246,7 @@ button {
 }
 
 .banner h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 15px;
   font-weight: bold;
 }
@@ -272,3 +272,4 @@ button {
 .banner-button:hover {
   background-color: #fdd835;
 }
+
